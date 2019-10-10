@@ -21,7 +21,6 @@ class App extends Component {
     status: 'Click an image to begin!'
   };
 
-  //write function to randomly render images on page
 
   clickedImage = id => {
     //let clickedImages = this.state.clickedImages;
@@ -40,7 +39,7 @@ class App extends Component {
 
       score=0;
       clickedImages=[];
-
+      this.state.images.sort(() => Math.random() -0.5);
       return;
     } else {
       score++;
@@ -49,6 +48,7 @@ class App extends Component {
       clickedImages.push(id);
       this.setState({ clickedImages:this.clickedImages, score: score, status: 'Good guess!' })
       console.log(clickedImages);
+      this.state.images.sort(() => Math.random() -0.5);
       return;
     }
   }

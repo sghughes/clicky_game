@@ -1,15 +1,6 @@
 import React from 'react';
 import './style.css';
 
-// class Counter extends React.Component {
-//     state= {
-//         count: 0
-//     }
-// };
-
-// handleIncrement = () => {
-//     this.ListeningStateChangedEvent({ count: this.state.count + 1});
-// };
 
 function Navbar(props) {
     return (
@@ -20,5 +11,5 @@ function Navbar(props) {
         </nav>
     );
   }
-// fix navbar dynamic
+
     export default Navbar;
